@@ -1,3 +1,18 @@
+
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@rds-wem-qa.internal.hcwem.com:1521:devqa19c
+    username: DELTACARE1_DEMO
+    password: DELTACARE1
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle12cDialect
+
+  zipkin:
+    base-url: http://localhost:9411/
+
 eureka:
   instance:
     hostname: localhost
